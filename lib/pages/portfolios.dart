@@ -111,14 +111,14 @@ class _PortfolioState extends State<Portfolios> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.white12,
         appBar: AppBar(
           title: Image(
-            image: AssetImage('assets/icon.png'),
+            image: AssetImage('assets/doytech-4dark.png'),
             height: 45,
           ),
           elevation: 5,
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.white12,
         ),
         body: Container(
           decoration: BoxDecoration(color: Colors.white70),
@@ -135,9 +135,9 @@ class _PortfolioState extends State<Portfolios> {
         ));
   }
 
-  Widget latestPosts(Future<List<dynamic>> latestArticles) {
+  Widget latestPosts(Future<List<dynamic>> latestPosts) {
     return FutureBuilder<List<dynamic>>(
-      future: latestArticles,
+      future: latestPosts,
       builder: (context, articleSnapshot) {
         if (articleSnapshot.hasData) {
           if (articleSnapshot.data.length == 0) return Container();

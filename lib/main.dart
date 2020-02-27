@@ -7,6 +7,7 @@ import 'package:flutter_wordpress_app/pages/local_articles.dart';
 import 'package:flutter_wordpress_app/pages/search.dart';
 import 'package:flutter_wordpress_app/pages/settings.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:flutter_wordpress_app/pages/portfolios.dart';
 
 void main() => runApp(MyApp());
 
@@ -50,7 +51,8 @@ class _MyHomePageState extends State<MyHomePage> {
   int _selectedIndex = 0;
   final List<Widget> _widgetOptions = [
     Articles(),
-    LocalArticles(),
+    // LocalArticles(),
+    Portfolios(),
     Categories(),
     Search(),
     Settings()
@@ -117,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
             BottomNavigationBarItem(
                 icon: Icon(Icons.home), title: Text('Bahrain')),
             BottomNavigationBarItem(
-                icon: Icon(Icons.flare), title: Text(PAGE2_CATEGORY_NAME)),
+                icon: Icon(Icons.flare), title: Text('Portfolio')),
             BottomNavigationBarItem(
                 icon: Icon(Icons.category), title: Text('Categories')),
             BottomNavigationBarItem(

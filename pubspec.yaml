@@ -1,7 +1,7 @@
 name: flutter_wordpress_app
 description: Flutter news app for wordpress platform
 
-version: 1.0.0+4
+version: 1.1.0+4000
 
 environment:
   sdk: ">=2.2.2 <3.0.0"
