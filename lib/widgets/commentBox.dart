@@ -16,7 +16,7 @@ Widget commentBox(BuildContext context, String author, String avatar, String con
             if (node is dom.Element) {
               switch (node.localName) {
                 case "p":
-                  return baseStyle.merge(Theme.of(context).textTheme.body1);
+                  return baseStyle.merge(Theme.of(context).textTheme.bodyText1);
               }
             }
             return baseStyle;

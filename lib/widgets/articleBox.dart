@@ -37,7 +37,7 @@ Widget articleBox(BuildContext context, Article article, String heroId) {
                                   switch (node.localName) {
                                     case "h1":
                                       return baseStyle.merge(
-                                          Theme.of(context).textTheme.title);
+                                          Theme.of(context).textTheme.headline6);
                                   }
                                 }
                                 return baseStyle;

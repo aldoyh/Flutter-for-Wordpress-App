@@ -202,7 +202,7 @@ class _SingleArticleState extends State<SingleArticle> {
                                 case "h1":
                                   return Theme.of(context)
                                       .textTheme
-                                      .title
+                                      .headline6
                                       .merge(TextStyle(fontSize: 20));
                               }
                             }
@@ -244,7 +244,7 @@ class _SingleArticleState extends State<SingleArticle> {
                               switch (node.localName) {
                                 case "div":
                                   return baseStyle
-                                      .merge(Theme.of(context).textTheme.body1);
+                                      .merge(Theme.of(context).textTheme.bodyText1);
                               }
                             }
                             return baseStyle;
