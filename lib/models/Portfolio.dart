@@ -29,6 +29,7 @@ class Portfolio {
   factory Portfolio.fromJson(Map<String, dynamic> json) {
     String content = json['content'] != null ? json['content']['rendered'] : "";
 
+    print(json['_embedded']["wp:featuredmedia"][0]["media_details"]["sizes"]["large"]["source_url"]);
     String image = json['_embedded']["wp:featuredmedia"][0]["media_details"]["sizes"]["large"]["source_url"] != ""
         ? json['_embedded']["wp:featuredmedia"][0]["media_details"]["sizes"]["large"]["source_url"]
         : "https://images.wallpaperscraft.com/image/surface_dark_background_texture_50754_1920x1080.jpg";

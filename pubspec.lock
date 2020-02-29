@@ -379,7 +379,7 @@ packages:
     source: hosted
     version: "5.4.2"
   url_launcher_macos:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: url_launcher_macos
       url: "https://pub.dartlang.org"
@@ -393,7 +393,7 @@ packages:
     source: hosted
     version: "1.0.6"
   url_launcher_web:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: url_launcher_web
       url: "https://pub.dartlang.org"

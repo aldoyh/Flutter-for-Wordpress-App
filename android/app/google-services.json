@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "305862062761",
-    "firebase_url": "https://flutter-wp-965b2.firebaseio.com",
-    "project_id": "flutter-wp-965b2",
-    "storage_bucket": "flutter-wp-965b2.appspot.com"
+    "project_number": "338526379474",
+    "firebase_url": "https://doytech-show.firebaseio.com",
+    "project_id": "doytech-show",
+    "storage_bucket": "doytech-show.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:305862062761:android:94a3bb9714777406026fb8",
+        "mobilesdk_app_id": "1:338526379474:android:02242263414acb9ca9fc0b",
         "android_client_info": {
-          "package_name": "com.wordpress.flutter.app"
+          "package_name": "tech.doy.bahrainapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "305862062761-pu6ftpgt3be89eu1f03537acp44p0m2d.apps.googleusercontent.com",
+          "client_id": "338526379474-3j7kufbd712mep0qm56it6qhvtpf4v5f.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBnap03TddsJIJFA6RQAiiah-FwR1z8fzE"
+          "current_key": "AIzaSyCtSQl98dmOh37gHBHaLuzyfYwNs3942a0"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "305862062761-pu6ftpgt3be89eu1f03537acp44p0m2d.apps.googleusercontent.com",
+              "client_id": "338526379474-3j7kufbd712mep0qm56it6qhvtpf4v5f.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

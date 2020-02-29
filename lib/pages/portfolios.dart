@@ -46,7 +46,7 @@ class _PortfolioState extends State<Portfolios> {
   Future<List<dynamic>> fetchLatestPorts(int page) async {
     try {
       var response = await http.get(
-          '$WORDPRESS_URL/wp-json/wp/v2/portfolio/?page=$page&per_page=10');
+          'https://doy.tech/wp-json/wp/v2/jetpack-portfolio/?_embed&page=$page&per_page=10');
       if (this.mounted) {
         if (response.statusCode == 200) {
           setState(() {
@@ -54,6 +54,7 @@ class _PortfolioState extends State<Portfolios> {
                 .decode(response.body)
                 .map((m) => Portfolio.fromJson(m))
                 .toList());
+            print(latestArticles);
             if (latestArticles.length % 10 != 0) {
               _infiniteStop = true;
             }
@@ -73,7 +74,8 @@ class _PortfolioState extends State<Portfolios> {
   Future<List<dynamic>> fetchFeaturedPorts(int page) async {
     try {
       var response = await http.get(
-          "$WORDPRESS_URL/wp-json/wp/v2/portfolio/?jetpack-portfolio-type[]=$FEATURED_ID&page=$page&per_page=10");
+          "$WORDPRESS_URL/wp-json/wp/v2/jetpack-portfolio/?_embed&page=$page&per_page=10");
+          // "$WORDPRESS_URL/wp-json/wp/v2/portfolio/?jetpack-portfolio-type[]=$FEATURED_ID&page=$page&per_page=10");
 
       if (this.mounted) {
         if (response.statusCode == 200) {
@@ -135,9 +137,9 @@ class _PortfolioState extends State<Portfolios> {
         ));
   }
 
-  Widget latestPosts(Future<List<dynamic>> latestPosts) {
+  Widget latestPosts(Future<List<dynamic>> latestPorts) {
     return FutureBuilder<List<dynamic>>(
-      future: latestPosts,
+      future: latestPorts,
       builder: (context, articleSnapshot) {
         if (articleSnapshot.hasData) {
           if (articleSnapshot.data.length == 0) return Container();
